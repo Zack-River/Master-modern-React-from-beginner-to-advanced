@@ -8,7 +8,7 @@
 
 A comprehensive React learning journey from core JavaScript fundamentals to advanced React concepts.
 
-[Getting Started](#-getting-started) • [Course Structure](#-course-structure) • [Projects](#-projects) • [Progress](#-progress-tracker)
+[Getting Started](#-getting-started) • [Course Structure](#-course-structure) • [Challenges](#-challenges) • [Projects](#-projects) • [Progress](#-progress-tracker)
 
 </div>
 
@@ -30,13 +30,13 @@ This repository contains all the code, notes, and projects from the **"Master Mo
 
 ## 🗂️ Course Structure
 
-| Section | Title | Topics | Project |
-|:-------:|-------|--------|---------|
-| [01](./section-01-Welcome) | **Welcome** | React setup, useState, useEffect, JSX, Props | Advice App |
-| [02](./section-02-First-Look) | **First Look at React** | Why React, React vs Vanilla JS, Pure React | Clock App |
-| [03](./section-03-js-review) | **JavaScript Review** | ES6+, Destructuring, Arrays, Async/Await | JS Exercises |
-| [04](./section-04-working-with-components) | **Components (Starter)** | Project setup, CRA structure | Pizza Menu |
-| [05](./section-05-working-with-components) | **Working with Components** | Component architecture, Composition | Pizza Menu |
+| Section | Title | Topics | Project | Challenge |
+|:-------:|-------|--------|---------|:---------:|
+| [01](./section-01-Welcome) | **Welcome** | React setup, useState, useEffect, JSX, Props | Advice App | - |
+| [02](./section-02-First-Look) | **First Look at React** | Why React, React vs Vanilla JS, Pure React | Clock App | - |
+| [03](./section-03-js-review) | **JavaScript Review** | ES6+, Destructuring, Arrays, Async/Await | JS Exercises | - |
+| [04](./section-04-working-with-components) | **Working with Components** | Props, Lists, Conditional Rendering | Pizza Menu | [#01](./challenges/ch-01-developer-card) |
+| [05](./section-05-working-with-components) | **Working with Components** | Component architecture, Composition | Pizza Menu | - |
 
 ---
 
@@ -113,6 +113,18 @@ Building real-world React applications:
 cd section-05-working-with-components/pizza && npm start
 ```
 </details>
+
+---
+
+## 🏆 Challenges
+
+Practice challenges to reinforce concepts learned:
+
+| # | Challenge | Description | Section |
+|:-:|-----------|-------------|:-------:|
+| [01](./challenges/ch-01-developer-card) | **Developer Card** | Build a personal profile card with components | 04 |
+
+➡️ [View all challenges](./challenges)
 
 ---
 
