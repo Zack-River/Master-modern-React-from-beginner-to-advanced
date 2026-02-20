@@ -35,8 +35,9 @@ This repository contains all the code, notes, and projects from the **"Master Mo
 | [01](./section-01-Welcome) | **Welcome** | React setup, useState, useEffect, JSX, Props | Advice App | - |
 | [02](./section-02-First-Look) | **First Look at React** | Why React, React vs Vanilla JS, Pure React | Clock App | - |
 | [03](./section-03-js-review) | **JavaScript Review** | ES6+, Destructuring, Arrays, Async/Await | JS Exercises | - |
-| [04](./section-04-working-with-components) | **Working with Components** | Props, Lists, Conditional Rendering | Pizza Menu | [#01](./challenges/ch-01-developer-card) |
-| [05](./section-05-working-with-components) | **Working with Components** | Component architecture, Composition | Pizza Menu | - |
+| [04](./section-04-working-with-components) | **Working with Components** | Props, Lists, Conditional Rendering | Pizza Menu | [#01](./challenges/ch-01-developer-card), [#02](./challenges/ch-02-date-counter-v1) |
+| [05](./section-05-state-Events\ -and-Forms) | **State, Events, and Forms** | Interactivity, state, events, controlled forms | Steps, Travel List | [#03](./challenges/ch-03-flash-cards), [#04](./challenges/ch-04-date-counter-v2), [#05](./challenges/ch-05-accordion-v1) |
+| [06](./section-06) | **Thinking In React** | Lifting state, derived state | Tip Calculator | [#06](./challenges/ch-06-tip-calculator) |
 
 ---
 
@@ -99,7 +100,7 @@ cd section-03-js-review && node index.js
 </details>
 
 <details>
-<summary><strong>📁 Section 04-05: Working with Components</strong></summary>
+<summary><strong>📁 Section 04: Working with Components</strong></summary>
 
 **Project:** Pizza Menu App  
 
@@ -110,7 +111,23 @@ Building real-world React applications:
 - Props and data flow
 
 ```bash
-cd section-05-working-with-components/pizza && npm start
+cd section-04-working-with-components/pizza && npm start
+```
+</details>
+
+<details>
+<summary><strong>📁 Section 05: State, Events, and Forms</strong></summary>
+
+**Project:** Steps, Travel List
+
+Adding Interactivity:
+- Working interactively with the `useState` hook.
+- Handling events natively via synthetic events.
+- Building controlled components and forms.
+- Lifting State Up and Derived state.
+
+```bash
+cd section-05-state-Events\ -and-Forms/02-travel-list && npm start
 ```
 </details>
 
@@ -123,6 +140,11 @@ Practice challenges to reinforce concepts learned:
 | # | Challenge | Description | Section |
 |:-:|-----------|-------------|:-------:|
 | [01](./challenges/ch-01-developer-card) | **Developer Card** | Build a personal profile card with components | 04 |
+| [02](./challenges/ch-02-date-counter-v1) | **Date Counter v1** | Basic state and date manipulation | 04 |
+| [03](./challenges/ch-03-flash-cards) | **Flash Cards** | Conditional rendering and list mapping | 05 |
+| [04](./challenges/ch-04-date-counter-v2) | **Date Counter v2** | Controlled inputs and forms | 05 |
+| [05](./challenges/ch-05-accordion-v1) | **Accordion v1** | Component extraction and local state | 05 |
+| [06](./challenges/ch-06-tip-calculator) | **Tip Calculator** | Lifting state and derived variables | 06 |
 
 ➡️ [View all challenges](./challenges)
 
@@ -135,7 +157,9 @@ Practice challenges to reinforce concepts learned:
 | **Advice App** | 01 | Random advice generator with counter | `npm start` |
 | **Pure React Clock** | 02 | Real-time clock without build tools | Open HTML |
 | **JS Exercises** | 03 | Modern JavaScript practice | `node index.js` |
-| **Pizza Menu** | 04-05 | Restaurant menu with components | `npm start` |
+| **Pizza Menu** | 04 | Restaurant menu with components | `npm start` |
+| **Steps** | 05 | Interactive step tutorial view | `npm start` |
+| **Travel List** | 05 | Dynamic travel packing list | `npm start` |
 
 ---
 
@@ -145,8 +169,9 @@ Practice challenges to reinforce concepts learned:
 Section 01 ████████████████████ 100% ✅ Welcome
 Section 02 ████████████████████ 100% ✅ First Look at React  
 Section 03 ████████████████████ 100% ✅ JavaScript Review
-Section 04 ████████████████████ 100% ✅ Components (Starter)
-Section 05 ██████████░░░░░░░░░░  50% 🔄 Working with Components
+Section 04 ████████████████████ 100% ✅ Components
+Section 05 ████████████████████ 100% ✅ State, Events, Forms
+Section 06 ██████████░░░░░░░░░░  50% 🔄 Thinking in React
 ```
 
 ---

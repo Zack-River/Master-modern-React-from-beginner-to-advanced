@@ -1,46 +1,51 @@
-# Travel Packing List App
+# Project: Travel List
 
 ## 📋 Overview
 
-A comprehensive real-world scenario application focusing on managing large structured arrays in React state. The app builds interactive, controlled HTML forms and sorts complex lists derived from that data.
+This is the flagship project for Section 05. The Travel List is a dynamic packing list tool where users can input items, view them, sort them through varying attributes, toggle them as packed, and delete them.
 
 ---
 
 ## 🎯 What I Learned & Applied
 
-### 1. Fully Controlled Inputs
-- Syncing text strings and dropdown numbers natively to React components, enforcing a Single Source of Truth for form payloads.
+### 1. Controlled Elements & Form Submission
+
+Linking inputs directly to React state so forms have a single source of truth when submitting data.
+
 ```javascript
-<input type="text" value={description} onChange={(e) => setDescription(e.target.value)} />
+<form onSubmit={handleSubmit}>
+  <input value={description} onChange={(e) => setDescription(e.target.value)} />
+</form>
 ```
 
-### 2. Form Submissions
-- Hijacking standard HTML `onSubmit` events using `e.preventDefault()`.
-- Grouping controlled input state variables into single Object packages suitable for parent components.
+### 2. Passing Handlers through Props
 
-### 3. State Array Mutations
-- Safely handling arrays inside React state strictly without mutation.
-- Using Javascript functional iteration (`.map()`, `.filter()`) to add and delete List elements locally.
+Building complex trees wherein the `App` maintains the `items` state, but children such as `Form` and `Item` execute actions by receiving specific custom handlers `onAddItem`, `onDeleteItem`, etc.
 
-### 4. Advanced Array Sorting
-- Leveraging derived state variables to render sorted UI nodes:
-```javascript
-let sortedItems;
-if (sortBy === "input") sortedItems = items;
-if (sortBy === "description") sortedItems = items.slice().sort((a,b) => a.description.localeCompare(b.description));
-```
+### 3. Derived State and Array Methods
+
+Sorting or filtering lists dynamically without redefining state variables. Computing items left to pack dynamically from `items.filter`.
+
+### 4. Controlled State with Select Fields
+
+Using `<select>` tags to manage dynamic sorting rules and triggering array sorts before re-rendering.
 
 ---
 
-## 📁 Project Structure
+## 📁 Structure
 
 ```
 02-travel-list/
 ├── src/
-│   ├── App.js        # Core handlers for adding, deleting, lifting state
-│   ├── Form.js       # The "Add Item" Controlled Sub-Component
-│   ├── PackingList.js# Renders and maps Item outputs
-│   └── Item.js       # Atomic level data block 
+│   ├── components/
+│   │   ├── App.js           # Core App holding Items state
+│   │   ├── Form.js          # Add Item Form
+│   │   ├── Item.js          # Independent Item node
+│   │   ├── Logo.js          # Standard Header
+│   │   ├── PackingList.js   # Mapping wrapper with sort
+│   │   └── Stats.js         # Derived footer logic
+│   ├── index.css            # Styles
+│   └── index.js             # Entry Point
 └── package.json
 ```
 
@@ -49,7 +54,7 @@ if (sortBy === "description") sortedItems = items.slice().sort((a,b) => a.descri
 ## 🚀 Running the Project
 
 ```bash
-cd "section-05-state-Events -and-Forms/02-travel-list"
+cd section-05-state-Events\ -and-Forms/02-travel-list
 npm install
 npm start
 ```
@@ -58,17 +63,8 @@ Open [http://localhost:3000](http://localhost:3000) to view in browser.
 
 ---
 
-## ✅ Skills Applied
-
-- [x] HTML Form Event Control (`onSubmit`, `e.preventDefault`)
-- [x] Lifting State Up
-- [x] Sorting & Filtering Arrays cleanly
-- [x] Derived State tracking properties 
-
----
-
 <div align="center">
 
-**🔙 [Back to Section 05](../README.md)** • **🔙 [Back to Main Repository](../../../README.md)**
+**🔙 [Back to Section 05 README](../README.md)**
 
 </div>
