@@ -28,6 +28,24 @@ This repository contains all the code, notes, and projects from the **"Master Mo
 
 ---
 
+## 🧸 React Sandbox: The "Explain Like I'm 3" Revision Guide
+
+We have created an extremely detailed, beginner-friendly revision guide for the entire course up to this point. If you ever forget a concept, read these guides! They explain everything using simple analogies like Lego blocks and toys.
+
+| Guide File | Topics Covered |
+|------------|----------------|
+| [🎈 Introduction](./react-revision-guide/00-intro.md) | What is React? Why is it like Lego? |
+| [🐣 Section 01: Welcome and Basics](./react-revision-guide/01-welcome-and-basics.md) | `create-react-app`, `App.js`, JSX, `useState`, `useEffect` |
+| [👀 Section 02: First Look](./react-revision-guide/02-first-look.md) | Imperative vs Declarative, Virtual DOM |
+| [🧠 Section 03: JS Review](./react-revision-guide/03-javascript-review.md) | Destructuring, Spread/Rest, `map`, Short-circuiting, Async |
+| [🧱 Section 04: Components & Props](./react-revision-guide/04-components-and-props.md) | Making Lego pieces, passing props, rendering lists |
+| [🎛️ Section 05: State, Events, Forms](./react-revision-guide/05-state-events-forms.md) | Handling clicks, deep dive into `useState`, Controlled Inputs |
+| [🤔 Section 06: Thinking in React](./react-revision-guide/06-thinking-in-react.md) | Component Trees, Lifting State Up, Derived State |
+| [⚙️ Section 07: Behind the Scenes](./react-revision-guide/07-react-behind-the-scenes.md) | Render vs Commit phases, Rules of Hooks, Component Composition |
+| [🏆 Section 08: Challenges Recap](./react-revision-guide/08-challenges-recap.md) | Lessons learned from Challenges 1 through 9 |
+
+---
+
 ## 🗂️ Course Structure
 
 | Section | Title | Topics | Project | Challenge |
@@ -37,7 +55,8 @@ This repository contains all the code, notes, and projects from the **"Master Mo
 | [03](./section-03-js-review) | **JavaScript Review** | ES6+, Destructuring, Arrays, Async/Await | JS Exercises | - |
 | [04](./section-04-working-with-components) | **Working with Components** | Props, Lists, Conditional Rendering | Pizza Menu | [#01](./challenges/ch-01-developer-card), [#02](./challenges/ch-02-date-counter-v1) |
 | [05](./section-05-state-Events\ -and-Forms) | **State, Events, and Forms** | Interactivity, state, events, controlled forms | Steps, Travel List | [#03](./challenges/ch-03-flash-cards), [#04](./challenges/ch-04-date-counter-v2), [#05](./challenges/ch-05-accordion-v1) |
-| [06](./section-06) | **Thinking In React** | Lifting state, derived state | Tip Calculator | [#06](./challenges/ch-06-tip-calculator) |
+| [06](./section-06-composition-and-reusablilty) | **Thinking In React** | Lifting state, derived state | Tip Calculator, usePopcorn | [#06](./challenges/ch-06-tip-calculator), [#07](./challenges/ch-07-eat-n-split) |
+| [07](./section-07-react-behind-the-scenes) | **Behind the Scenes** | Render phase, commit phase, virtual DOM | - | [#08](./challenges/ch-08-mini-trello), [#09](./challenges/ch-09-text-expander) |
 
 ---
 
@@ -145,6 +164,9 @@ Practice challenges to reinforce concepts learned:
 | [04](./challenges/ch-04-date-counter-v2) | **Date Counter v2** | Controlled inputs and forms | 05 |
 | [05](./challenges/ch-05-accordion-v1) | **Accordion v1** | Component extraction and local state | 05 |
 | [06](./challenges/ch-06-tip-calculator) | **Tip Calculator** | Lifting state and derived variables | 06 |
+| [07](./challenges/ch-07-eat-n-split) | **Eat N Split** | Complex state and array manipulation | 06 |
+| [08](./challenges/ch-08-mini-trello) | **Mini Trello** | Passing data between components | 07 |
+| [09](./challenges/ch-09-text-expander) | **Text Expander** | Component composition and children props | 07 |
 
 ➡️ [View all challenges](./challenges)
 
@@ -171,7 +193,8 @@ Section 02 ████████████████████ 100% ✅
 Section 03 ████████████████████ 100% ✅ JavaScript Review
 Section 04 ████████████████████ 100% ✅ Components
 Section 05 ████████████████████ 100% ✅ State, Events, Forms
-Section 06 ██████████░░░░░░░░░░  50% 🔄 Thinking in React
+Section 06 ████████████████████ 100% ✅ Thinking in React
+Section 07 ████████████████████ 100% ✅ React Behind the Scenes
 ```
 
 ---

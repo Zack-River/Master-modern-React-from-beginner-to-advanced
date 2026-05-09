@@ -8,7 +8,13 @@ function Test() {
   const [MovieRating, setMovieRating] = useState(0);
   return (
     <div>
-      <StarRating color="blue" onSetRating={setMovieRating} />
+      <StarRating
+        color="blue"
+        onSetRating={setMovieRating}
+        defaultRating={3}
+        maxRating={6}
+        messages={["Terrible", "Bad", "Ok", "Good", "Great", "Awesome"]}
+      />
       <p>
         This Movie was
         {MovieRating ? ` rated with ${MovieRating} starts` : " not rated yet"}
