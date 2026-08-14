@@ -1,1 +1,7 @@
 theory-slides-v1.1.pdf
+
+# Dependencies
+node_modules
+build
+dist
+.env
